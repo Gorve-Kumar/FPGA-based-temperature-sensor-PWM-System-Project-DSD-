@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Jan 13 01:50:56 2024
+# Process ID: 16336
+# Current directory: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/impl_1
+# Command line: vivado.exe -log CEP_CS125.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CEP_CS125.tcl -notrace
+# Log file: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/impl_1/CEP_CS125.vdi
+# Journal file: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source CEP_CS125.tcl -notrace

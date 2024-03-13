@@ -1,0 +1,629 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan 12 20:36:24 2024
+# Process ID: 616
+# Current directory: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17564 D:\Semester 7\DSD LAB\Lab 14\DSD_CEP\DSD_CEP.xpr
+# Log file: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/vivado.log
+# Journal file: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:18 . Memory (MB): peak = 806.152 ; gain = 71.434
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test1_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9ac57cdd02bd4de6ba9c3241660f34f3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -view {{D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+xsim: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 860.867 ; gain = 24.188
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 860.867 ; gain = 24.188
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test1_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9ac57cdd02bd4de6ba9c3241660f34f3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -view {{D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CEP_CS125.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CEP_CS125
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CLK_Generator_200kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_Generator_200kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Master_I2C
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sim_1/new/CEP_CS125_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9ac57cdd02bd4de6ba9c3241660f34f3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CLK_Generator_200kHz
+Compiling module xil_defaultlib.Master_I2C
+Compiling module xil_defaultlib.Display
+Compiling module xil_defaultlib.CEP_CS125
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -view {{D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CEP_CS125.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CEP_CS125
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CLK_Generator_200kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_Generator_200kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Master_I2C
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sim_1/new/CEP_CS125_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9ac57cdd02bd4de6ba9c3241660f34f3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CLK_Generator_200kHz
+Compiling module xil_defaultlib.Master_I2C
+Compiling module xil_defaultlib.Display
+Compiling module xil_defaultlib.CEP_CS125
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -view {{D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CEP_CS125.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CEP_CS125
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CLK_Generator_200kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_Generator_200kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Master_I2C
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sim_1/new/CEP_CS125_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9ac57cdd02bd4de6ba9c3241660f34f3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CLK_Generator_200kHz
+Compiling module xil_defaultlib.Master_I2C
+Compiling module xil_defaultlib.Display
+Compiling module xil_defaultlib.CEP_CS125
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -view {{D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CEP_CS125.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CEP_CS125
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CLK_Generator_200kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_Generator_200kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Master_I2C
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sim_1/new/CEP_CS125_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9ac57cdd02bd4de6ba9c3241660f34f3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CLK_Generator_200kHz
+Compiling module xil_defaultlib.Master_I2C
+Compiling module xil_defaultlib.Display
+Compiling module xil_defaultlib.CEP_CS125
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -view {{D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Jan 12 21:12:16 2024] Launched synth_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Jan 12 21:12:59 2024] Launched impl_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Jan 12 21:13:56 2024] Launched impl_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: CEP_CS125
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 992.461 ; gain = 102.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CEP_CS125' [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CEP_CS125.v:8]
+INFO: [Synth 8-6157] synthesizing module 'CLK_Generator_200kHz' [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CLK_Generator_200kHz.v:9]
+WARNING: [Synth 8-5788] Register clk_reg_reg in module CLK_Generator_200kHz is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CLK_Generator_200kHz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLK_Generator_200kHz' (1#1) [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CLK_Generator_200kHz.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Master_I2C' [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v:9]
+	Parameter sensor_address_plus_read bound to: 8'b10010111 
+	Parameter POWER_UP bound to: 5'b00000 
+	Parameter START bound to: 5'b00001 
+	Parameter SEND_ADDR6 bound to: 5'b00010 
+	Parameter SEND_ADDR5 bound to: 5'b00011 
+	Parameter SEND_ADDR4 bound to: 5'b00100 
+	Parameter SEND_ADDR3 bound to: 5'b00101 
+	Parameter SEND_ADDR2 bound to: 5'b00110 
+	Parameter SEND_ADDR1 bound to: 5'b00111 
+	Parameter SEND_ADDR0 bound to: 5'b01000 
+	Parameter SEND_RW bound to: 5'b01001 
+	Parameter REC_ACK bound to: 5'b01010 
+	Parameter REC_MSB7 bound to: 5'b01011 
+	Parameter REC_MSB6 bound to: 5'b01100 
+	Parameter REC_MSB5 bound to: 5'b01101 
+	Parameter REC_MSB4 bound to: 5'b01110 
+	Parameter REC_MSB3 bound to: 5'b01111 
+	Parameter REC_MSB2 bound to: 5'b10000 
+	Parameter REC_MSB1 bound to: 5'b10001 
+	Parameter REC_MSB0 bound to: 5'b10010 
+	Parameter SEND_ACK bound to: 5'b10011 
+	Parameter REC_LSB7 bound to: 5'b10100 
+	Parameter REC_LSB6 bound to: 5'b10101 
+	Parameter REC_LSB5 bound to: 5'b10110 
+	Parameter REC_LSB4 bound to: 5'b10111 
+	Parameter REC_LSB3 bound to: 5'b11000 
+	Parameter REC_LSB2 bound to: 5'b11001 
+	Parameter REC_LSB1 bound to: 5'b11010 
+	Parameter REC_LSB0 bound to: 5'b11011 
+	Parameter NACK bound to: 5'b11100 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v:87]
+WARNING: [Synth 8-5788] Register output_bit_reg in module Master_I2C is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v:94]
+WARNING: [Synth 8-5788] Register temperature_MSB_reg in module Master_I2C is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v:143]
+WARNING: [Synth 8-5788] Register temperature_LSB_reg in module Master_I2C is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v:188]
+INFO: [Synth 8-6155] done synthesizing module 'Master_I2C' (2#1) [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Display' [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Display.v:8]
+INFO: [Synth 8-226] default block is never used [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Display.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'Display' (3#1) [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Display.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'CEP_CS125' (4#1) [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CEP_CS125.v:8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1037.258 ; gain = 147.777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1037.258 ; gain = 147.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1037.258 ; gain = 147.777
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/constrs_1/new/CEP_CS125.xdc]
+Finished Parsing XDC File [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/constrs_1/new/CEP_CS125.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1421.348 ; gain = 531.867
+16 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 1421.348 ; gain = 531.867
+close_design
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CEP_CS125.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CEP_CS125
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CLK_Generator_200kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_Generator_200kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Master_I2C
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sim_1/new/CEP_CS125_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9ac57cdd02bd4de6ba9c3241660f34f3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CLK_Generator_200kHz
+Compiling module xil_defaultlib.Master_I2C
+Compiling module xil_defaultlib.Display
+Compiling module xil_defaultlib.CEP_CS125
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -view {{D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1421.348 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Jan 13 00:09:37 2024] Launched synth_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 131 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/constrs_1/new/CEP_CS125.xdc]
+Finished Parsing XDC File [D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/constrs_1/new/CEP_CS125.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Jan 13 00:36:20 2024] Launched synth_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Jan 13 01:12:21 2024] Launched synth_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Jan 13 01:38:20 2024] Launched synth_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test1' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test1_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CEP_CS125.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CEP_CS125
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/CLK_Generator_200kHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_Generator_200kHz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sources_1/new/Master_I2C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Master_I2C
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.srcs/sim_1/new/CEP_CS125_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test1
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 9ac57cdd02bd4de6ba9c3241660f34f3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test1_behav xil_defaultlib.test1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CLK_Generator_200kHz
+Compiling module xil_defaultlib.Master_I2C
+Compiling module xil_defaultlib.Display
+Compiling module xil_defaultlib.CEP_CS125
+Compiling module xil_defaultlib.test1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test1_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test1_behav -key {Behavioral:sim_1:Functional:test1} -tclbatch {test1.tcl} -view {{D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config {D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/test1_behav.wcfg}
+source test1.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 2000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test1_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 2000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1856.938 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs impl_1 -jobs 4
+[Sat Jan 13 01:42:32 2024] Launched impl_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Jan 13 01:45:04 2024] Launched synth_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Jan 13 01:46:20 2024] Launched impl_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Jan 13 01:50:45 2024] Launched impl_1...
+Run output will be captured here: D:/Semester 7/DSD LAB/Lab 14/DSD_CEP/DSD_CEP.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 13 01:56:38 2024...

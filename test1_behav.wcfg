@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test1_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="151"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/test1/CLK100MHZ" type="logic">
+      <obj_property name="ElementShortName">CLK100MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/temp_data_switch" type="array">
+      <obj_property name="ElementShortName">temp_data_switch[12:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_data_switch[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/sensor" type="logic">
+      <obj_property name="ElementShortName">sensor</obj_property>
+      <obj_property name="ObjectShortName">sensor</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/TEMP_SDA" type="logic">
+      <obj_property name="ElementShortName">TEMP_SDA</obj_property>
+      <obj_property name="ObjectShortName">TEMP_SDA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/TEMP_SCL" type="logic">
+      <obj_property name="ElementShortName">TEMP_SCL</obj_property>
+      <obj_property name="ObjectShortName">TEMP_SCL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/SEG_CA" type="array">
+      <obj_property name="ElementShortName">SEG_CA[6:0]</obj_property>
+      <obj_property name="ObjectShortName">SEG_CA[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/SEG_AN" type="array">
+      <obj_property name="ElementShortName">SEG_AN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SEG_AN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/decimal_point" type="logic">
+      <obj_property name="ElementShortName">decimal_point</obj_property>
+      <obj_property name="ObjectShortName">decimal_point</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/Temp_LED" type="array">
+      <obj_property name="ElementShortName">Temp_LED[12:0]</obj_property>
+      <obj_property name="ObjectShortName">Temp_LED[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/Reset_LED" type="logic">
+      <obj_property name="ElementShortName">Reset_LED</obj_property>
+      <obj_property name="ObjectShortName">Reset_LED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/Sensor_LED" type="logic">
+      <obj_property name="ElementShortName">Sensor_LED</obj_property>
+      <obj_property name="ObjectShortName">Sensor_LED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/R" type="logic">
+      <obj_property name="ElementShortName">R</obj_property>
+      <obj_property name="ObjectShortName">R</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/G" type="logic">
+      <obj_property name="ElementShortName">G</obj_property>
+      <obj_property name="ObjectShortName">G</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test1/B" type="logic">
+      <obj_property name="ElementShortName">B</obj_property>
+      <obj_property name="ObjectShortName">B</obj_property>
+      <obj_property name="CustomSignalColor">#0000A0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>
